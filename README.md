@@ -34,3 +34,18 @@ make sure to activate virtual environment
 export PEER=True && python3 -m backend.app
 '''
 
+**Run the frontend**
+
+'''
+1. cd frontend
+2. yarn install
+3. yarn start
+'''
+
+**Seed the backend with data**
+
+make sure to activate virtual environment
+
+'''
+export SEED_DATA=True && python3 -m backend.app
+'''

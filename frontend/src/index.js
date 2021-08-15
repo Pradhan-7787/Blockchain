@@ -3,15 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom"
-
+import {BrowserRouter, Router} from "react-router-dom"
+import history from './history';
 
 
 ReactDOM.render(
   <>
+  <Router history={history}>
   <BrowserRouter>
     <App />
   </BrowserRouter>
+  </Router>
   </>,
   document.getElementById('root')
 );

@@ -1,18 +1,23 @@
-import logo from './logo.svg';
-// import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import Home from './Screens/Home';
-import Transactions from './Screens/Transactions';
 import NavBar from './Components/NavBar';
+import Blockchain from './Screens/Blockchain';
+import ConductTransactions from './Screens/ConductTransactions';
+import TransactionPool from './Screens/TransactionPool';
+
 
 const App = () => {
   return(
     <>
+    
     <NavBar/>
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route path='/transaction' component={Transactions}/>
+      <Route path='/blockchain' component={Blockchain}/>
+      <Route path='/transaction' component={ConductTransactions}/>
+      <Route path='/transaction-pool' component={TransactionPool}/>
       </Switch>
+      
     </>
   )
 }
